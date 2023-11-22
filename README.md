@@ -1,6 +1,6 @@
 # Pycalendly
 
-The `Pycalendly` is designed to interact with the Calendly API and provide convenient methods for common operations. 
+The `Pycalendly` is designed to interact with the Calendly API and provide convenient methods for common operations. Full documentation is available at https://developer.calendly.com/api-docs/4b402d5ab3edd-calendly-developer
 
 #### Parameters
 - `token` (str): The Calendly API token used for authentication.

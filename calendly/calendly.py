@@ -5,6 +5,7 @@ import requests
 from calendly.constants import API, USERS_ME, SCHEDULING_LINKS, WEBHOOKS
 from calendly.config import CalendlyConfig
 
+
 class Calendly(CalendlyConfig):
     def __init__(self, token: str):
         super().__init__(token)
@@ -23,10 +24,7 @@ class Calendly(CalendlyConfig):
         return response.json()
 
     def get_event_types(self):
-        url = (
-            API
-            + f"event_types?organization={self.organization}&user={self.user_id}"
-        )
+        url = API + f"event_types?organization={self.organization}&user={self.user_id}"
         data = {
             "organization": self.organization,
             "user": self.user,

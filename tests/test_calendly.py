@@ -1,7 +1,13 @@
 import unittest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from calendly.calendly import Calendly
-from tests.payloads import *
+from tests.payloads import (
+    get_user_paylod,
+    get_event_types_payload,
+    list_all_webhooks_payload,
+    get_webhook_subscription_payload,
+    create_webhook_subscription_payload,
+)
 
 
 class TestCalendly(unittest.TestCase):
@@ -64,7 +70,7 @@ class TestCalendly(unittest.TestCase):
 
     @patch("calendly.calendly.requests.post")
     @patch("calendly.calendly.requests.get")
-    def test_create_webhook_subscription(self,mock_get, mock_post):
+    def test_create_webhook_subscription(self, mock_get, mock_post):
         mock_post.return_value.json.return_value = get_user_paylod
         mock_post.return_value.json.return_value = create_webhook_subscription_payload
         cal = Calendly("token")

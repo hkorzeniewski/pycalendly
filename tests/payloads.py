@@ -65,12 +65,11 @@ get_event_types_payload = {
 
 
 create_single_use_link_payload = {
-        "resource": {
-            "booking_url": "https://calendly.com/d/48k-rx3-pm5/konsultacja-90-min",
-            "owner": "https://api.calendly.com/event_types/5f599ff5-9e71-454c-9f4f-59d761109a1c",
-            "owner_type": "EventType",
-        }
-    
+    "resource": {
+        "booking_url": "https://calendly.com/d/48k-rx3-pm5/konsultacja-90-min",
+        "owner": "https://api.calendly.com/event_types/5f599ff5-9e71-454c-9f4f-59d761109a1c",
+        "owner_type": "EventType",
+    }
 }
 
 list_all_webhooks_payload = {
@@ -114,19 +113,18 @@ get_webhook_subscription_payload = {
     }
 }
 
-create_webhook_subscription_payload =   {
-        "resource": {
-            "uri": "https://api.calendly.com/webhook_subscriptions/AAAAAAAAAAAAAAAA",
-            "callback_url": "https://blah.foo/bar",
-            "created_at": "2019-08-24T14:15:22.123456Z",
-            "updated_at": "2019-08-24T14:15:22.123456Z",
-            "retry_started_at": "2019-08-24T14:15:22.123456Z",
-            "state": "active",
-            "events": ["invitee.created"],
-            "scope": "user",
-            "organization": "https://api.calendly.com/organizations/AAAAAAAAAAAAAAAA",
-            "user": "https://api.calendly.com/users/AAAAAAAAAAAAAAAA",
-            "creator": "https://api.calendly.com/users/AAAAAAAAAAAAAAAA",
-        }
-    
+create_webhook_subscription_payload = {
+    "resource": {
+        "uri": "https://api.calendly.com/webhook_subscriptions/AAAAAAAAAAAAAAAA",
+        "callback_url": "https://blah.foo/bar",
+        "created_at": "2019-08-24T14:15:22.123456Z",
+        "updated_at": "2019-08-24T14:15:22.123456Z",
+        "retry_started_at": "2019-08-24T14:15:22.123456Z",
+        "state": "active",
+        "events": ["invitee.created"],
+        "scope": "user",
+        "organization": "https://api.calendly.com/organizations/AAAAAAAAAAAAAAAA",
+        "user": "https://api.calendly.com/users/AAAAAAAAAAAAAAAA",
+        "creator": "https://api.calendly.com/users/AAAAAAAAAAAAAAAA",
+    }
 }
