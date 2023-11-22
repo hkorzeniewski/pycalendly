@@ -9,7 +9,7 @@ def readme():
 setup(
     name="pycalendly",
     version="0.1.0",
-    author="Hubert Korzeniewski",
+    author="hubson",
     author_email="hubert.korzeniewski@theengineers.tech",
     description="A short description of your package",
     long_description=readme(),
