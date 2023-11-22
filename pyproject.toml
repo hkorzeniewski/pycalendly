@@ -1,18 +1,23 @@
-[tool.poetry]
+[project]
 name = "pycalendly"
 version = "0.1.0"
-description = ""
-authors = ["hkorzeniewski <hubert.korzeniewski@theengineers.tech>"]
+authors = [
+  { name="hubson", email="hubert.korzeniewski@theengineers.tech" },
+]
+description = "A small example package"
 readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-requests = "^2.31.0"
-black = "^23.11.0"
-ruff = "^0.1.6"
-pytest = "^7.4.3"
+[project.urls]
+Homepage = "https://github.com/hkorzeniewski/pycalendly"
+Issues = "https://github.com/hkorzeniewski/pycalendly/issues"
 
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
